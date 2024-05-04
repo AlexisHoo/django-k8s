@@ -9,4 +9,4 @@ RUN /opt/venv_k8s/bin/pip install pip --upgrade
 RUN /opt/venv_k8s/bin/pip install -r requirements.txt
 RUN chmod +x entrypoint.sh
 
-CMD ["entrypoint.sh"]
+CMD ["/app/entrypoint.sh"]
